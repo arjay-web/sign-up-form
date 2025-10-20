@@ -66,6 +66,10 @@ fieldset {
     border: none;  
 }
 
+.form-row input {
+    padding: 7px;
+}
+
 /* Button Section */
 .control-form {
     height: 34%;
@@ -73,6 +77,44 @@ fieldset {
     padding: 20px;
 }
 
-.form-content {
+.form-row {
     margin:  0 40px 20px 40px;
+    display: flex;
+    gap: 50px;
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form-footer {
+   margin:  0 40px 20px 40px; 
+}
+
+a {
+    text-decoration: none;
+    color: #596D48;
+}
+
+input {
+    width: 200px;
+}
+
+input:focus {
+    outline: none; /* removes default browser outline */
+    border-color: #4CAF50; /* change border color */
+    background-color: #f0fff0; /* optional: change background */
+    box-shadow: 0 0 5px #4CAF50;
+}
+
+button {
+    background-color: #596D48;
+    color: #F9F9F9;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }

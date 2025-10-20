@@ -15,7 +15,7 @@
     </div>
     <form action="">
         <section class="header-form">
-            <div class="form-content">
+            <div class="form-row">
                 <h4 class="form-heading">
                     This is not a real online service! You know you need something
                     like this in your life to help you realize your deepest dreams.
@@ -23,7 +23,7 @@
                 </h4>
             </div>
             
-            <div class="form-content">
+            <div class="form-row">
                 <h4 class="form-heading">
                     You know you want to.
                 </h4>
@@ -31,38 +31,53 @@
         </section>
         <section class="information-form">
             <fieldset>
-                <div class="form-content">
+                <div class="form-row">
                     <h3 class="form-heading">
                         Let's do this!
                     </h3>
                 </div>
                 
-                <div class="form-content">
-                    <label for="firstname">FIRST NAME</label>
-                    <input type="text" name="firstname" id="firstname">
-                    <label for="lastname">LAST NAME</label>
-                    <input type="text" name="lastname" id="lastname">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstname">FIRST NAME</label>
+                        <input type="text" name="firstname" id="firstname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname">LAST NAME</label>
+                        <input type="text" name="lastname" id="lastname" required>
+                    </div>
                 </div>
-                <div class="form-content">
-                    <label for="email">EMAIL</label>
-                    <input type="email" name="usermail" id="email">
-                    <label for="phonenumber">PHONE NUMBER</label>
-                    <input type="tel" name="phonenumber" id="phonenumber">
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="usermail" id="email" placeholder="joe@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phonenumber">PHONE NUMBER</label>
+                        <input type="tel" name="phonenumber" id="phonenumber" required>
+                    </div>
                 </div>
-                <div class="form-content">
-                    <label for="pwd">PASSWORD</label>
-                    <input type="password" name="password" id="pwd">
-                    <label for="confirm-pwd">CONFIRM PASSWORD</label>
-                    <input type="password" name="confirm_password" id="confirm-pwd">
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="pwd">PASSWORD</label>
+                        <input type="password" name="password" id="pwd" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-pwd">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirm_password" id="confirm-pwd" required>
+                    </div>
                 </div>
             </fieldset>
         </section>
         <section class="control-form">
-            <div class="form-content">
+            <div class="form-row">
                 <button type="submit">Create Account</button>
             </div>
-            <div class="form-content">
-                Already have an account?
+            <div class="form-footer">
+               <span>Already have an account?</span>
+               <a href="">Log in</a>
             </div>
         </section>
     </form>
