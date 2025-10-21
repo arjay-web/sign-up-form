@@ -124,6 +124,7 @@ input:valid {
 input[type='password']:invalid,
 input[type='email']:invalid {
     border-color:red;
+    background-color: #ffe6e6;
 }
 
 button {
