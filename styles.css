@@ -99,15 +99,31 @@ a {
     color: #596D48;
 }
 
+label {
+    font-size: 0.765rem;
+}
+
 input {
     width: 200px;
 }
 
 input:focus {
     outline: none; /* removes default browser outline */
-    border-color: #4CAF50; /* change border color */
-    background-color: #f0fff0; /* optional: change background */
-    box-shadow: 0 0 5px #4CAF50;
+    border-color:  #2196F3; /* change border color */
+    background-color: #f0f8ff; /* optional: change background */
+    box-shadow: 0 0 5px #2196F3;
+}
+
+input:valid {
+    outline: none;
+    border-color: #4CAF50;
+    background-color: #f0fff0;
+    box-shadow: 0 0 5px #4caf50;
+}
+
+input[type='password']:invalid,
+input[type='email']:invalid {
+    border-color:red;
 }
 
 button {
@@ -117,4 +133,8 @@ button {
     border: none;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    background-color:#4e603f ;
 }
